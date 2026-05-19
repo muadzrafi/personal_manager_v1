@@ -1,0 +1,58 @@
+/* Transisi smooth semua link */
+a, .btn, .nav-link, .card { transition: all 0.2s ease; }
+ 
+/* Hover efek card */
+.card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+ 
+/* Small box hover */
+.small-box:hover { transform: translateY(-2px); }
+ 
+/* Sidebar nav header styling */
+.nav-header {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.4) !important;
+    padding: 8px 16px 4px;
+    margin-top: 4px;
+}
+ 
+/* Badge ukuran lebih readable */
+.badge { font-size: 11px; padding: 4px 7px; }
+ 
+/* Tabel hover lebih halus */
+.table-hover tbody tr:hover { background: #f1f8ff; }
+ 
+/* Mark/highlight di search */
+mark { background: #fff3cd; padding: 0 3px; border-radius: 3px; font-style: normal; }
+ 
+/* Avatar default initial */
+.avatar-initial {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+ 
+/* Flash message auto-dismiss */
+.alert { animation: fadeInDown 0.3s ease; }
+ 
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+ 
+/* FullCalendar custom */
+.fc-event { cursor: pointer; border-radius: 4px !important; font-size: 12px; }
+.fc-event:hover { opacity: 0.85; }
+ 
+/* Sidebar brand link */
+.brand-link:hover { background: rgba(255,255,255,0.05) !important; }
+ 
+/* Responsive tabel di mobile */
+@media (max-width: 576px) {
+    .table-responsive { font-size: 13px; }
+    .btn-group-sm .btn { padding: 2px 6px; }
+}
